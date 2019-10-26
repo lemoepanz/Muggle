@@ -1,7 +1,8 @@
 {
     "team":
 [
-        {"id": "1", "name": "apinan", "concept": "teach","url":D:\Codecamp\Github\Muggle\apinan.html},
-        {"id": "2", "name": "lemoepanz", "concept": "learn" ,"url":D:\Codecamp\Github\Muggle\lemoepanz.html}
+        {"id": "1", "name": "apinan", "concept": "teach","url":"https://github.com/lemoepanz/Muggle/blob/feature-index/apinan.html"},
+        {"id": "2", "name": "lemoepanz", "concept": "learn" ,"url":"https://github.com/lemoepanz/Muggle/blob/feature-index/lemoepanz.html"}
 ]
 }
+
