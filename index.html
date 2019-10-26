@@ -9,16 +9,16 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <script src="lib/jquery-3.4.1.min.js"></script>
         <script>
-                $.ajax({"url":"https://reqres.in/api/user","method":"GET" })
+                $.ajax({"url":"https://raw.githubusercontent.com/lemoepanz/Muggle/feature-index/member.json","method":"GET" })
                 .done(function(r){
                         
                         let list = $("#members")
                         list.append('<thead><tr> <th>id</th> <th>name</th> <th>concept</th> <th>url</th> </tr></thead>')
                    
-                        for (let index = 0; index < r.data.length; index++) {
-                                console.log(r.data[index].id)
+                        for (let index = 0; index < r.team.length; index++) {
+                                console.log(r.team[index].id)
                                 //const element = r.data[index];
-                        list.append('<tr> <td>'+r.data[index].id+'</td> <td>'+r.data[index].name+'</td> <td>'+r.data[index].concept+'</td> <td>'+r.data[index].XXX+'</td></tr>')
+                        list.append('<tr> <td>'+r.team[index].id+'</td> <td>'+r.team[index].name+'</td> <td>'+r.team[index].concept+'</td> <td>'+r.team[index].url+'</td></tr>')
                         }
                 })
                 </script>
